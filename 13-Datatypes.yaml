@@ -11,7 +11,7 @@
     - Helm
     CONCEPTS:
       CI/CD: Jenkins
-      Script: Python, Bash
+      Scripting: Python, Bash
       Monitoring: Grafana, Prometheonous
     TRAINER: Siva
   tasks:
