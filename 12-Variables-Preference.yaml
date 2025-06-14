@@ -3,8 +3,8 @@
   connection: local
   vars:
     MESSAGE: Hello from play variables
-  vars_files:
-  - 07-course.yaml
+  # vars_files:
+  # - 07-course.yaml
   vars_prompt:
     - name: MESSAGE
       prompt: Enter your Message
