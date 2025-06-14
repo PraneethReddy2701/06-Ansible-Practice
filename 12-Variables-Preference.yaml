@@ -5,10 +5,10 @@
     MESSAGE: Hello from play variables
   # vars_files:
   # - 07-course.yaml
-  vars_prompt:
-    - name: MESSAGE
-      prompt: Enter your Message
-      private: false
+  # vars_prompt:
+  #   - name: MESSAGE
+  #     prompt: Enter your Message
+  #     private: false
   tasks: 
   - name: Print Variables Preference
     # vars:
