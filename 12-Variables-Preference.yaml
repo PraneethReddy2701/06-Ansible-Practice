@@ -1,8 +1,8 @@
 - name: Variables Preference
   hosts: local
   connection: local
-  vars:
-    MESSAGE: Hello from play variables
+  # vars:
+  #   MESSAGE: Hello from play variables
   # vars_files:
   # - 07-course.yaml
   # vars_prompt:
