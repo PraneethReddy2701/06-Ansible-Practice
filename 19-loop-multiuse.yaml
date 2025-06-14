@@ -1,5 +1,5 @@
 - name: Multiuse loop
-  hosts: frontend
+  hosts: Node1
   become: yes
   tasks:
   - name: Installing and uninstalling packages
