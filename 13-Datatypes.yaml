@@ -5,7 +5,7 @@
     DURATION: 120 Hrs
     COURSE: DevSecOps
     IS_LIVE: true
-    Tools:
+    TOOLS:
     - Linux
     - Grafana
     - Helm
