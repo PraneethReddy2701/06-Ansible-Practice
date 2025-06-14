@@ -9,3 +9,7 @@
   - name: Printing course information
     ansible.builtin.debug:
       msg: "I am learning {{ COURSE }} in {{ DURATION }} with trainer {{ TRAINER }}"
+
+  - name: Printing Course Information to check whether variables will be accessed
+    ansible.builtin.debug:
+      msg: "course is {{ COURSE }} time taken: {{ DURATION }} and trainer is {{ TRAINER }}"
