@@ -9,7 +9,7 @@
     - Linux
     - Grafana
     - Helm
-    Concepts:
+    CONCEPTS:
       CI/CD: Jenkins
       Script: Python, Bash
       Monitoring: Grafana, Prometheonous
