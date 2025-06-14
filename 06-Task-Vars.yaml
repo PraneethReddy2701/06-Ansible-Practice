@@ -1,6 +1,10 @@
 - name: Task Level Variables
   hosts: local
   connection: local
+  vars:
+    COURSE: DevSecOps
+    DURATION: 120 Days
+    TRAINER: Siva
   tasks:
   - name: Printing Course information
     vars:
@@ -9,3 +13,7 @@
       TRAINER: Siva Kumar
       ansible.builtin.debug:
         msg: "I am learning {{ COURSE }} in {{ DURATION }} with trainer {{ TRAINER }}"
+
+  - name: Printing Course information again to check whether variables will be accessed
+    ansible.builtin.debug:
+      msg: "I am learning {{ COURSE }} in {{ DURATION }} with trainer {{ TRAINER }}"
