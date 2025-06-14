@@ -1,0 +1,11 @@
+- name: Task Level Variables
+  hosts: local
+  connection: local
+  tasks:
+  - name: Printing Course information
+    vars:
+      COURSE: AWS
+      DURATION: 60 Days
+      TRAINER: Siva Kumar
+      ansible.builtin.debug:
+        msg: "I am learning {{ COURSE }} in {{ DURATION }} with trainer {{ TRAINER }}"
