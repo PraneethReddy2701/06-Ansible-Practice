@@ -1,6 +1,6 @@
 - name: Conditions with Facts
-  hosts: local
-  connection: local
+  hosts: Node1
+  become: yes
   tasks:
   - name: Install nginx if os_family is redhat
     ansible.builtin.package:
