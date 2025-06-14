@@ -8,7 +8,7 @@
       state: Installed
 
   - name: Start nginx server
-    ansible.buitlin.service:
+    ansible.builtin.service:
       name: nginx
       state: started
       enable: yes
