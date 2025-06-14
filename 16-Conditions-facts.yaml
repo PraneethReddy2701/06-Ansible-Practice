@@ -1,0 +1,15 @@
+- name: Conditions with Facts
+  hosts: local
+  connection: local
+  tasks:
+  - name: Install nginx if os_family is redhat
+    ansible.builtin.package:
+      name: nginx
+      state: present
+    when: ansible_os_family == "RedHat"
+
+  - name: Install nginx if 0s_family is debian
+    ansible.builtin.package:
+      name:  nginx
+      state: installed
+    when: ansible_os_family == "Debian"
