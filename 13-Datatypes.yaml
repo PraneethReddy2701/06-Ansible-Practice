@@ -1,0 +1,20 @@
+- name: Datatypes in Ansible
+  hosts: local
+  connection: local
+  vars:
+    DURATION: 120 Hrs
+    COURSE: DevSecOps
+    IS_LIVE: true
+    Tools:
+    - Linux
+    - Grafana
+    - Helm
+    Concepts:
+      CI/CD: Jenkins
+      Script: Python, Bash
+      Monitoring: Grafana, Prometheonous
+    TRAINER: Siva
+  tasks:
+  - name: Print Datatypes
+    ansible.builtin.debug:
+      msg: "I am learning {{ COURSE }} in {{ DURATION }}  is live: {{ IS_LIVE }} with trainer {{ TRAINER }} which includes {{ TOOLS }} and covers concepts {{ CONCEPTS }}"
