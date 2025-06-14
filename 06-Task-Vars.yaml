@@ -11,8 +11,8 @@
       COURSE: AWS
       DURATION: 60 Days
       TRAINER: Siva Kumar
-      ansible.builtin.debug:
-        msg: "I am learning {{ COURSE }} in {{ DURATION }} with trainer {{ TRAINER }}"
+    ansible.builtin.debug:
+      msg: "I am learning {{ COURSE }} in {{ DURATION }} with trainer {{ TRAINER }}"
 
   - name: Printing Course information again to check whether variables will be accessed
     ansible.builtin.debug:
