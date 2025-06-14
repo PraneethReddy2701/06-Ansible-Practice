@@ -3,7 +3,7 @@
   connection: local
   vars:
     NUM: 56
-  task:
+  tasks:
   - name: Print the number if it is less than 100
     ansible.builtin.debug:
       msg: "{{ NUM }} is between 1 to 100"
