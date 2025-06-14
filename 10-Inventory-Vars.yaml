@@ -1,5 +1,6 @@
 - name: Inventory Variables
   hosts: Node1
+  become: yes
   tasks:
   - name: Inventory Variables
     ansible.builtin.debug:
