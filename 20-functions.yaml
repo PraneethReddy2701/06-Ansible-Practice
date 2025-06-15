@@ -6,7 +6,7 @@
   tasks:
   - name: Check undefined variables
     ansible.builtin.debug:
-      msg: " Hello {{ Persons | default(reddie27) }}"
+      msg: "Hello {{ Persons | default(reddie27) }}"
 
   - name: split names
     ansible.builtin.debug:
@@ -24,9 +24,9 @@
   - name: changing list to map
     var:
       course:
-        - {'key':'name' , 'value':'ansible'}
-        - {'key':'duration' , 'value':'10Hrs'}
-        - {'key':'trainer' , 'value':'siva'}
+        - "{'key':'name' , 'value':'ansible'}"
+        - "{'key':'duration' , 'value':'10Hrs'}"
+        - "{'key':'trainer' , 'value':'siva'}"
     ansible.builtin.debug:
       msg: "Course info : {{ Course | items2dict }}"
 
@@ -34,13 +34,13 @@
     var:
       name: Praneeth Reddy Kotholla
     ansible.builtin.debug:
-      msg: {{ name | upper }}
+      msg: "{{ name | upper }}"
 
   - name: convert to lower
     var:
       name: Praneeth Reddy Kotholla
     ansible.builtin.debug:
-      msg: {{ name | lower }}
+      msg: "{{ name | lower }}"
 
   - name: Check IP is valid or not
     var:
