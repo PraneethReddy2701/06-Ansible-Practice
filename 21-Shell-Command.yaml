@@ -12,8 +12,8 @@
 
   - name: redirect ls output into a file using command_result
     ansible.builtin.command: "ls -ltr"
-    register: command-output
+    register: command_output
 
   - name: print the output
     ansible.builtin.debug:
-      msg: "{{ command-output }}"
+      msg: "{{ command_output }}"
