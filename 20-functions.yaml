@@ -13,7 +13,7 @@
       msg: "hi {{ Persons | split(',') }}
 
   - name: changing map to list
-    var:
+    vars:
       Course:
         name: Ansible
         duration: 10HR
@@ -22,7 +22,7 @@
       msg: "Course info: {{ Course | dict2items }}"
 
   - name: changing list to map
-    var:
+    vars:
       course:
         - "{'key':'name' , 'value':'ansible'}"
         - "{'key':'duration' , 'value':'10Hrs'}"
@@ -31,19 +31,19 @@
       msg: "Course info : {{ Course | items2dict }}"
 
   - name: convert to upper
-    var:
+    vars:
       name: Praneeth Reddy Kotholla
     ansible.builtin.debug:
       msg: "{{ name | upper }}"
 
   - name: convert to lower
-    var:
+    vars:
       name: Praneeth Reddy Kotholla
     ansible.builtin.debug:
       msg: "{{ name | lower }}"
 
   - name: Check IP is valid or not
-    var:
+    vars:
       ip: 266:298:1:4
     ansible.builtin.debug:
       msg: "{{ ip | ansible.utils.ipaddr }}"
