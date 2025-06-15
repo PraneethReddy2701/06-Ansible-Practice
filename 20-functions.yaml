@@ -23,7 +23,7 @@
 
   - name: changing list to map
     vars:
-      course:
+      Course:
         - "{'key':'name' , 'value':'ansible'}"
         - "{'key':'duration' , 'value':'10Hrs'}"
         - "{'key':'trainer' , 'value':'siva'}"
