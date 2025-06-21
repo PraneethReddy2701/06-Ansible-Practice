@@ -6,9 +6,9 @@
     - frontend
     - backend
     - mysql
-  subnet_id: subnet-000513aac180f4644
-  sg_id: sg-0c2f51da4d5a05c81
-  zone: bittu27.site
+    subnet_id: subnet-000513aac180f4644
+    sg_id: sg-0c2f51da4d5a05c81
+    zone: bittu27.site
   tasks:
   - name: creating ec2 instances
     amazon.aws.ec2_instance:
